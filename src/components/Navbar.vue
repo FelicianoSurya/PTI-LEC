@@ -6,16 +6,13 @@
         <div class="container nav p-2 d-flex justify-content-center align-items-center">
             <ul class="col-7 d-flex m-0 justify-content-around align-items-center">
                 <li class="nav-item">
-                    <a class="nav-link"><router-link to="/">Home</router-link></a>
+                    <a class="nav-link"><router-link to="">Home</router-link></a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link"><router-link to="/blog">News</router-link></a>
+                    <a class="nav-link"><router-link to="">News</router-link></a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link"><router-link to="/development">About Us</router-link></a>
-                </li>
-                <li class="nav-item" v-show="isList" style="cursor:pointer">
-                    <a class="nav-link" @click="logout()">Logout</a>
+                    <a class="nav-link"><router-link to="">About Us</router-link></a>
                 </li>
             </ul>
             <div class="col-5 search d-flex justify-content-end">
