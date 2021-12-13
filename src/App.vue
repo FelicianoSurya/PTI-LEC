@@ -2,17 +2,20 @@
   <Banner />
   <Navbar />
   <router-view/>
+  <Footer />
 </template>
 
 <script>
 import Banner from './components/Banner'
 import Navbar from './components/Navbar'
+import Footer from './components/Footer'
 
 export default {
   name : 'App',
   components : {
     Banner,
     Navbar,
+    Footer,
   }
   
 }

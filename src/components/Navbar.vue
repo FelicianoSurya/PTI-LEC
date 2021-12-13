@@ -20,7 +20,7 @@
             </ul>
             <div class="col-5 search d-flex justify-content-end">
                 <div class="col-5">
-                    <input type="text" class="input form-control">
+                    <input placeholder="Search" type="text" class="input form-control">
                 </div>
             </div>
         </div> 
