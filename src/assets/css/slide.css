@@ -1,0 +1,17 @@
+.background-banner{
+    width: 100%;
+    min-height: 400px;
+    background-size: cover;
+    background-repeat:no-repeat ;
+}
+
+.background-title{
+    background-color: rgba(0,0,0,0.5);
+    color:white;
+    line-height: 17px;
+}
+
+.headline-date {
+    border-top: 1px solid white;
+    padding-top:2px;
+}
