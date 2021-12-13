@@ -1,0 +1,15 @@
+.footer-details {
+    background-color: rgba(0, 0, 0, 0.055);
+    border-top: solid 1px rgba(0, 0, 0, 0.247);
+}
+.footer-details img{
+    width: 13%;
+}
+
+.footer-details p{
+    font-size: 11px;
+}
+
+.footer-note {
+    font-size: 10px;
+}

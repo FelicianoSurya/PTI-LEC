@@ -1,0 +1,27 @@
+.ourteam-card img {
+    width: 100%;
+}
+.section-6{
+    background-color: white;
+}
+
+.section-6 .ourteam-card{
+    background-color: #F7F7F7;
+    border-radius: 10px;
+    box-shadow: 2px 4px 5px 0px rgba(0, 0, 0, 0.11);
+    -webkit-box-shadow: 2px 4px 5px 0px rgba(0, 0, 0, 0.11);
+    -moz-box-shadow: 2px 4px 5px 0px rgba(0, 0, 0, 0.11);
+    padding: 20px;
+    transition: 0.2s;
+}
+
+.section-6 .ourteam-card:hover{
+    transform: scale(1.1);
+    transition: 0.1s;
+    background-color: #ffbb55;
+    cursor: grab;
+}
+
+.ourteam-card img {
+    margin-bottom: 10px;
+}
