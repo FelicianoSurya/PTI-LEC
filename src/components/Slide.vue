@@ -6,13 +6,17 @@
         <div v-for="data in headlines.slice(0, 1)" :key="data.id" class="background-banner d-flex flex-column justify-content-between align-items-center" v-bind:style="{ backgroundImage : 'url(' + data.urlToImage + ')' }">
             <div class="col-12 p-2 d-flex justify-content-end">
                 <div class="col-1">
-                    <SelectCountry />
+                    <router-link to=""><button class="btn btn-danger">More Headline</button></router-link>
+                </div>
+                <div class="col-1">
+                    <SelectCountry @changeCountry="changeC($event)" />
                 </div>
             </div>
-            <div class="w-100 h-100 px-5 py-2 d-flex flex-column background-title">
+            <div class="w-100 h-100 px-5 py-2 d-flex flex-column align-items-center background-title">
                 <h3>{{ data.title }}</h3>
                 <p>{{ data.publishedAt }}</p>
                 <p>{{ data.description }}</p>
+                <a :href="data.url" target="_blank" class="col-2"><button class="btn btn-danger">Go To Article</button></a>
             </div>
         </div>
     </div>
@@ -32,7 +36,7 @@ export default {
     return {
         headlines : [],
         data : {
-            country : "id",
+            country : "us",
         }
     }
   },
@@ -41,9 +45,13 @@ export default {
   },
   methods : {
       getHeadline(){
-          axios.get('https://newsapi.org/v2/top-headlines?country=' +  this.data.country  + '&apiKey=ae0db9c4ef714ec18ff33f2dccb5a2ee').then((res)=>{
+          axios.get('https://newsapi.org/v2/top-headlines?country=' +  this.data.country  + '&apiKey=9df00cedc1d04fb99e0e61c94c9f52da').then((res)=>{
               this.headlines = res.data.articles;
           });
+      },
+      changeC(country){
+          this.data.country = country;
+          this.getHeadline();
       }
   }
 }

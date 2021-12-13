@@ -3,7 +3,7 @@
   
   <div>
   
-    <select v-model="this.data.country" class="form-control" @change="getHeadline()">
+    <select v-model="this.data.country" class="form-control" @change="getCountry()">
         <option value="us">US</option>
         <option value="ae">United Arab Emirates</option>
         <option value="ar">Argentina</option>
@@ -28,16 +28,17 @@ export default {
   data(){
       return {
           data : {
-              country : "id"
+              country : "us"
           }
       }
   },
+  mounted(){
+      this.getCountry();
+  },
   methods : {
-      getHeadline(){
-          axios.get('https://newsapi.org/v2/top-headlines?country=' +  this.data.country  + '&apiKey=ae0db9c4ef714ec18ff33f2dccb5a2ee').then((res)=>{
-              this.headlines = res.data.articles;
-          });
-      }
+    getCountry(){
+        this.$emit('changeCountry', this.data.country);
+    }
   }
 }
 </script>

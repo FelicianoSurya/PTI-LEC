@@ -12,7 +12,7 @@
               <h3><b>{{ data.title }}</b></h3>
               <p class="desc">{{ data.description }}</p>
               <div class="d-flex justify-content-end btn-information">
-                  <button class="btn btn-info m-3">Go To Article</button>
+                  <a :href="data.url" target="_blank"><button class="btn btn-info m-3">Go To Article</button></a>
               </div>
             </div>
             <div class="card-footer col-12 d-flex justify-content-end text-muted">
@@ -45,7 +45,7 @@ export default {
   },
   methods : {
       getNews(){
-          axios.get('https://newsapi.org/v2/everything?qlnTitle=' + this.data.qlnTitle + '&q='+ this.data.q +'&language=' + this.data.language + '&sortBy=' + this.data.sortBy +'&apiKey=ae0db9c4ef714ec18ff33f2dccb5a2ee').then((res)=>{
+          axios.get('https://newsapi.org/v2/everything?qlnTitle=' + this.data.qlnTitle + '&q='+ this.data.q +'&language=' + this.data.language + '&sortBy=' + this.data.sortBy +'&apiKey=9df00cedc1d04fb99e0e61c94c9f52da').then((res)=>{
               this.news = res.data.articles;
           });
       }
