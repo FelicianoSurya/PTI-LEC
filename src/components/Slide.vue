@@ -19,7 +19,7 @@
                 </div>
             </div>
             <div class="col-lg-12 pt-2 d-flex justify-content-end">
-                <router-link to=""><button class="btn btn-dark">See More Trending News</button></router-link>
+                <router-link to="/trending"><button class="btn btn-dark">See More Trending News</button></router-link>
             </div>
         </div>
 
@@ -47,7 +47,7 @@ export default {
   },
   methods : {
       getHeadline(){
-          axios.get('https://newsapi.org/v2/top-headlines?country=' +  this.data.country  + '&apiKey=3da6743a387446a9a4fd10fbdd1ca0e0').then((res)=>{
+          axios.get('https://newsapi.org/v2/top-headlines?country=' +  this.data.country  + '&apiKey=81d9902f3c134af59184159644223273').then((res)=>{
               this.headlines = res.data.articles;
           });
       },

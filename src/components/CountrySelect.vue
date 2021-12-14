@@ -4,7 +4,6 @@
   <div>
   
     <select v-model="this.data.country" class="form-select" @change="getCountry()">
-        <option value="">Country</option>
         <option value="us">US</option>
         <option value="ae">United Arab Emirates</option>
         <option value="ar">Argentina</option>
@@ -29,7 +28,7 @@ export default {
   data(){
       return {
           data : {
-              country : "us"
+              country : "id"
           }
       }
   },

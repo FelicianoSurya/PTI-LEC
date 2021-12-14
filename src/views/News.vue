@@ -1,13 +1,17 @@
 <template>
 
 <div>
-      <div class="container mt-2 col-md-11 col-sm-9 col-11 d-flex pt-4">
-            <li class="sort-news justify-content-start"><SelectLanguage @changeLanguage="changeC($event)" /></li>
-            <li class="sort-news justify-content-start"><SortBy @changeSortBy="changeSortBy($event)" /></li>
-            <li class="sort-news justify-content-end d-flex align-items-end">
-              <Search @changeq="changeq($event)" />
-              <img class="px-1 col-lg-2" alt=" " src="../assets/images/search.png">
-            </li>
+      <div class="container mt-2 col-md-11 col-sm-9 col-11 d-flex justify-content-between pt-4">
+            <ul class="d-flex">
+              <li class="sort-news justify-content-start"><SelectLanguage @changeLanguage="changeC($event)" /></li>
+              <li class="sort-news justify-content-start"><SortBy @changeSortBy="changeSortBy($event)" /></li>
+            </ul>
+            <ul>
+              <li class="sort-news justify-content-end d-flex align-items-end">
+                <Search @changeq="changeq($event)" />
+                <img class="px-1 col-lg-2" alt=" " src="../assets/images/search.png">
+              </li>
+            </ul>
       </div>
 
     <div class="container mt-2 col-md-11 col-sm-9 col-11">
@@ -63,7 +67,7 @@ export default {
   },
   methods : {
     getNews(){
-      axios.get('https://newsapi.org/v2/everything?q=' + this.data.q + '&language=' + this.data.language + '&from=' + this.data.from + '&to=' + this.data.to + '&sortBy='+ this.data.sortBy + '&apiKey=3da6743a387446a9a4fd10fbdd1ca0e0').then((res)=>{
+      axios.get('https://newsapi.org/v2/everything?q=' + this.data.q + '&language=' + this.data.language + '&from=' + this.data.from + '&to=' + this.data.to + '&sortBy='+ this.data.sortBy + '&apiKey=81d9902f3c134af59184159644223273').then((res)=>{
         this.news = res.data.articles;
       });
     },
@@ -79,7 +83,11 @@ export default {
     },
 
     changeq(q){
-      this.data.q = q;
+      if(q == ''){
+        this.data.q = 'social';
+      }else{
+        this.data.q = q;
+      }
       this.getNews();
     }
   }

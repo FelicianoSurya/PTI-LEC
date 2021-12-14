@@ -4,11 +4,14 @@
   
     <div class="container mt-2 col-md-12 col-sm-9 col-11">
         <div class="pt-4 pb-2 p-0" style="text-align:left">
-          <h2><b>Top 10 Trending News</b></h2>
+          <div class="d-flex justify-content-between">
+            <h2><b>Top 10 Trending News</b></h2>
+            <CountrySelect @changeCountry="changeC($event)" />
+          </div>
           <div class="line"></div>
         </div>
         
-        <div v-for="data in news" :key="data.id" class="row mb-3 box-news">
+        <div v-for="data in news.slice(0, 10)" :key="data.id" class="row mb-3 box-news">
           <div class="col-md-4 p-0 d-flex">
               <img :src="data.urlToImage" alt="image_media">
           </div>  
@@ -32,26 +35,18 @@
 </template>
 
 <script>
-import SelectLanguage from '../components/LanguageSelect.vue'
-import SortBy from '../components/SortBy.vue'
-import Search from '../components/Search.vue'
+import CountrySelect from '../components/CountrySelect.vue'
 
 export default {
   name: 'Trending',
   components : {
-      SelectLanguage,
-      SortBy,
-      Search,
+      CountrySelect,
   },
   data(){
     return {
       news : [],
       data : {
-        q : 'social',
-        language : '',
-        from : '',
-        to : '',
-        sortBy : '',
+        language : 'us',
       }
     }
   },
@@ -60,23 +55,12 @@ export default {
   },
   methods : {
     getNews(){
-      axios.get('https://newsapi.org/v2/everything?q=' + this.data.q + '&language=' + this.data.language + '&from=' + this.data.from + '&to=' + this.data.to + '&sortBy='+ this.data.sortBy + '&apiKey=3da6743a387446a9a4fd10fbdd1ca0e0').then((res)=>{
+      axios.get('https://newsapi.org/v2/top-headlines? &country=' + this.data.language + '&apiKey=81d9902f3c134af59184159644223273').then((res)=>{
         this.news = res.data.articles;
       });
     },
-
     changeC(country){
-        this.data.language = country;
-        this.getNews();
-    },
-    
-    changeSortBy(sortBy){
-        this.data.sortBy = sortBy;
-        this.getNews();
-    },
-
-    changeq(q){
-      this.data.q = q;
+      this.data.language = country;
       this.getNews();
     }
   }
