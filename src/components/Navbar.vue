@@ -13,14 +13,6 @@
                     <a class="nav-link"><router-link to="/about">About Us</router-link></a>
                 </li>
             </ul>
-            <div class="col-lg-6 col-xs-10 search d-flex justify-content-end pe-4">
-                <div class="col-lg-5">
-                    <input placeholder="Search" type="text" class="input form-control flex-column">   
-                </div><a class="px-1" href="#">
-              <img alt=" " src="../assets/images/search.png">
-            </a>
-            </div> 
-            
         </div> 
     </div>
 
