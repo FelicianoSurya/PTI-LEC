@@ -7,7 +7,7 @@
                     <a class="nav-link"><router-link to="/">Home</router-link></a>
                 </li>
                 <li class="nav-item px-3">
-                    <a class="nav-link"><router-link to="/Trending">Trending</router-link></a>
+                    <a class="nav-link"><router-link to="/trending">Trending</router-link></a>
                 </li>
                 <li class="nav-item px-3">
                     <a class="nav-link"><router-link to="/news">News</router-link></a>
