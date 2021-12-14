@@ -47,7 +47,7 @@ export default {
   },
   methods : {
       getHeadline(){
-          axios.get('https://newsapi.org/v2/top-headlines?country=' +  this.data.country  + '&apiKey=c43b4de0624d496890c10dec833b7275').then((res)=>{
+          axios.get('https://newsapi.org/v2/top-headlines?country=' +  this.data.country  + '&apiKey=3da6743a387446a9a4fd10fbdd1ca0e0').then((res)=>{
               this.headlines = res.data.articles;
           });
       },
