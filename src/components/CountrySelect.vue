@@ -3,7 +3,7 @@
   
   <div>
   
-    <select v-model="this.data.country" class="form-control" @change="getCountry()">
+    <select v-model="this.data.country" class="form-select" @change="getCountry()">
         <option value="">Country</option>
         <option value="us">US</option>
         <option value="ae">United Arab Emirates</option>

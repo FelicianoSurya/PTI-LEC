@@ -32,9 +32,9 @@ export default {
         news : [],
         data : {
             qlnTitle : '',
-            q : 'all',
+            q : 'social',
             language : '',
-            sortBy : ''
+            sortBy : 'publishedAt'
         }
     }
   },
@@ -43,7 +43,7 @@ export default {
   },
   methods : {
       getNews(){
-          axios.get('https://newsapi.org/v2/everything?qlnTitle=' + this.data.qlnTitle + '&q='+ this.data.q +'&language=' + this.data.language + '&sortBy=' + this.data.sortBy +'&apiKey=9df00cedc1d04fb99e0e61c94c9f52da').then((res)=>{
+          axios.get('https://newsapi.org/v2/everything?qlnTitle=' + this.data.qlnTitle + '&q='+ this.data.q +'&language=' + this.data.language + '&sortBy=' + this.data.sortBy +'&apiKey=c43b4de0624d496890c10dec833b7275').then((res)=>{
               this.news = res.data.articles;
           });
       }

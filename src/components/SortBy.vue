@@ -2,7 +2,7 @@
 <template>
   
   <div class="d-flex flex-column align-items-start">
-    <select v-model="this.data.sortBy" class="form-control" @change="getsortBy()">
+    <select v-model="this.data.sortBy" class="form-select" @change="getsortBy()">
         <option value="">Sort By</option>
         <option value="publishedAt">Publised At</option>
         <option value="popularity">Popularity</option>

@@ -2,7 +2,7 @@
 <template>
   
   <div class="d-flex flex-column align-items-start">
-    <select v-model="this.data.language" class="form-control" @change="getLanguage()">
+    <select v-model="this.data.language" class="form-select" @change="getLanguage()">
         <option value="">Country</option>
         <option value="de">Germany</option>
         <option value="ar">Argentina</option>
