@@ -1,9 +1,11 @@
 <template>
 
-    <div class="col-md-12 col-sm-9 col-11 m-0 d-flex flex-column justify-content-start mt-3">
+    <div class="col-12 m-0 d-flex flex-column justify-content-start mt-3">
         <div class="d-flex justify-content-between">
-            <h2><b>Today News</b></h2>
-            <LanguageSelect @changeLanguage="changeLanguage($event)" />
+            <h2 class="col-5 col-lg-10 col-md-5 col-sm-5 text-start"><b>Today News</b></h2>
+            <div>
+                <LanguageSelect @changeLanguage="changeLanguage($event)" />
+            </div>
         </div>
         <hr class="w-100 mt-1 mb-2">
     </div> 

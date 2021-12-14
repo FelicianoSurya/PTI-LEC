@@ -8,7 +8,7 @@
             <h2><b>Top 10 Trending News</b></h2>
             <CountrySelect @changeCountry="changeC($event)" />
           </div>
-          <hr class="w-100 mt-1">
+          <div class="line"></div>
         </div>
         
         <div v-for="data in news.slice(0, 10)" :key="data.id" class="row mb-3 box-news">
@@ -16,12 +16,14 @@
               <img :src="data.urlToImage" alt="image_media">
           </div>  
           <div class="col-md-8 p-3 d-flex flex-column align-items-start justify-content-between information">
-            <div>
-              <h3><b>{{ data.title }}</b></h3>
-              <p class="desc">{{ data.description }}</p>
-                <div class="d-flex justify-content-end">
-                  <a :href="data.url" target="_blank"><button class="btn btn-secondary btn-sm mb-1">Go To Article</button></a>
-                </div>
+            <div class="d-flex flex-column justify-content-between" style="height:100%" >
+              <div>
+                <h3><b>{{ data.title }}</b></h3>
+                <p class="desc">{{ data.description }}</p>
+              </div>
+              <div class="d-flex justify-content-end">
+                <a :href="data.url" target="_blank"><button class="btn btn-secondary btn-sm mb-1">Go To Article</button></a>
+              </div>
             </div>
             <div class="card-footer col-12 d-flex justify-content-end text-muted newscard-date">
                 <h6>{{ data.publishedAt }}</h6>

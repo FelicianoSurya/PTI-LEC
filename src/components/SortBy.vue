@@ -1,7 +1,7 @@
 
 <template>
   
-  <div class="d-flex flex-column align-items-start">
+  <div class="d-flex flex-column align-items-start w-100">
     <select v-model="this.data.sortBy" class="form-select" @change="getsortBy()">
         <option value="">Sort By</option>
         <option value="relevancy">Relevancy</option>

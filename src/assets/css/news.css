@@ -83,6 +83,7 @@
     list-style: none;
     padding-left: 5px;
     padding-right: 5px;
+    display: flex;
 }
 
 .sort-news img{
@@ -92,6 +93,11 @@
 
 .newscard-date h6 {
     font-size: 12px;
+}
+
+.top-news{
+    display: flex;
+    justify-content: space-between;
 }
 
 .top-news h2 {
@@ -104,4 +110,24 @@
 
 .middle-home {
     background-color :rgba(0, 0, 0, 0.116);
+}
+
+@media (max-width: 450px){
+    .top-news{
+        display: flex;
+        flex-direction: column;
+        padding:0;
+    }
+    
+    .top-news ul{
+        display: flex;
+        flex-direction: column;
+        padding:0;
+    }
+
+    .top-news li{
+        width: 100%;
+        padding:0;
+        margin:5px 0px;
+    }
 }

@@ -1,12 +1,12 @@
 <template>
 
 <div>
-      <div class="container mt-2 col-md-11 col-sm-9 col-11 d-flex justify-content-between pt-4 top-news">
+      <div class="container mt-2 col-md-11 col-sm-9 col-12 pt-4 top-news">
         <h2><b>News</b></h2>
-            <ul class="d-flex sort-news ">
-              <li class="sort-news "><SelectLanguage @changeLanguage="changeC($event)" /></li>
-              <li class="sort-news "><SortBy @changeSortBy="changeSortBy($event)" /></li> 
-              <li class="sort-news d-flex">
+            <ul class="d-flex sort-news">
+              <li class="sort-news col-lg-4 col-md-4 col-sm-4 col-4"><SelectLanguage @changeLanguage="changeC($event)" /></li>
+              <li class="sort-news col-lg-4 col-md-4 col-sm-4 col-4"><SortBy @changeSortBy="changeSortBy($event)" /></li> 
+              <li class="sort-news col-lg-4 col-md-4 col-sm-4 col-4">
                 <Search @changeq="changeq($event)" />
               </li>
             </ul>
@@ -19,10 +19,12 @@
               <img :src="data.urlToImage" alt="image_media">
           </div>  
           <div class="col-md-8 p-3 d-flex flex-column align-items-start justify-content-between information">
-            <div>
-              <h3><b>{{ data.title }}</b></h3>
-              <p class="desc">{{ data.description }}</p>
-                <div class="d-flex justify-content-end">
+            <div class="w-100 d-flex flex-column justify-content-between" style="height:100%">
+              <div>
+                <h3><b>{{ data.title }}</b></h3>
+                <p class="desc">{{ data.description }}</p>
+              </div>
+                <div class="d-flex justify-content-end align-items-end">
                   <a :href="data.url" target="_blank"><button class="btn btn-secondary btn-sm mb-1">Go To Article</button></a>
                 </div>
             </div>

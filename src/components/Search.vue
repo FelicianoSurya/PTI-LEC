@@ -1,7 +1,7 @@
 
 <template>
   
-  <div class="d-flex flex-column align-items-start">
+  <div class="d-flex flex-column align-items-start w-100">
     <input type="text" v-model="data.q" class="form-control input" placeholder="Search" v-on:keyup="getq()">
   </div>
 
