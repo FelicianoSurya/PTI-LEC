@@ -1,13 +1,13 @@
 <template>
   
-    <div class="container-fluid p-0" style="background-color:black">
-        <div class="nav p-0 d-flex justify-content-center align-items-center">
-            <ul class="col-lg-5 col-11 d-flex m-0">
+    <div class="container-fluid p-0 main-navbar" style="background-color:black">
+        <div class="nav pX-0 d-flex">
+            <ul class="col-lg-12 col-11 d-flex m-0 justify-content-center">
                 <li class="nav-item px-3">
                     <a class="nav-link"><router-link to="/">Home</router-link></a>
                 </li>
                 <li class="nav-item px-3">
-                    <a class="nav-link"><router-link to="/news">Headlines</router-link></a>
+                    <a class="nav-link"><router-link to="/Trending">Trending</router-link></a>
                 </li>
                 <li class="nav-item px-3">
                     <a class="nav-link"><router-link to="/news">News</router-link></a>

@@ -1,13 +1,28 @@
 <template>
-  
+
+  <div class="container-fluid col-lg-12 d-flex about-top p-5 row">
+    <div class="col-lg-5 justify-content-center align-items-center py-5">
+        <img src="../assets/images/logo1.png" alt="">
+    </div> 
+    <div class="col-lg-7 pe-3 py-5" style="text-align:left">
+      <h3><b>About World E-News</b></h3>
+      <p>World E-News is a website that helps you to be able to read and find out the latest news
+         globally in several countries in the world. This website has features that make it easier for users to find the news they want.<br>
+          This website is also created using the Angular Framework and News API from https://newsapi.org/ site.
+      </p>
+    </div>
+  </div>
+
   <div class="container-fluid p-0">
-    <div class="section-6 py-5" id="team">
+    <div class="section-6 py-5 about-top1" id="team">
       <div class="container">
           <div class="row justify-content-center">
+              <h2><b>Meet The Team</b></h2>
               <div class="col-lg-3 col-sm-6 col-8 p-3">
                   <div class="ourteam-card text-center">
                       <img src="../assets/images/Ano.png" alt="">
                       <h4><b>Feliciano Surya M</b></h4>
+                      <p style="font-size:12px">feliciano.marcello@student.umn.ac.id</p> 
                       <p class="m-0">( 000 000 43255 )</p>
                   </div>
               </div>
@@ -15,6 +30,7 @@
                   <div class="ourteam-card text-center">
                       <img src="../assets/images/Dea.png" alt="">
                       <h4><b>Dea Noveriyanti</b></h4>
+                      <p style="font-size:12px">dea.noveriyanti@student.umn.ac.id</p> 
                       <p class="m-0">( 000 000 42550 )</p>
                   </div>
               </div>
@@ -22,6 +38,41 @@
                   <div class="ourteam-card text-center">
                       <img src="../assets/images/Charisma.png" alt="">
                       <h4><b>Charisma Christ A</b></h4>
+                      <p style="font-size:12px">feliciano.marcello@student.umn.ac.id</p> 
+                      <p class="m-0">( 000 000 43903 )</p>
+                  </div>
+              </div>
+            </div>
+        </div>
+    </div>
+  </div>
+
+   <div class="container-fluid p-0">
+    <div class="section-6 py-5" id="team">
+      <div class="container">
+          <div class="row justify-content-center">
+              <h2><b>Meet The Team</b></h2>
+              <div class="col-lg-3 col-sm-6 col-8 p-3">
+                  <div class="ourteam-card text-center">
+                      <img src="../assets/images/Ano.png" alt="">
+                      <h4><b>Feliciano Surya M</b></h4>
+                      <p style="font-size:12px">feliciano.marcello@student.umn.ac.id</p> 
+                      <p class="m-0">( 000 000 43255 )</p>
+                  </div>
+              </div>
+              <div class="col-lg-3 col-sm-6 col-8 p-3">
+                  <div class="ourteam-card text-center">
+                      <img src="../assets/images/Dea.png" alt="">
+                      <h4><b>Dea Noveriyanti</b></h4>
+                      <p style="font-size:12px">dea.noveriyanti@student.umn.ac.id</p> 
+                      <p class="m-0">( 000 000 42550 )</p>
+                  </div>
+              </div>
+              <div class="col-lg-3 col-sm-6 col-8 p-3">
+                  <div class="ourteam-card text-center">
+                      <img src="../assets/images/Charisma.png" alt="">
+                      <h4><b>Charisma Christ A</b></h4>
+                      <p style="font-size:12px">charisma.anugrah@student.umn.ac.id</p> 
                       <p class="m-0">( 000 000 43903 )</p>
                   </div>
               </div>

@@ -8,8 +8,8 @@
                 space for upadated global news.
             </b></p>
         </div>  
-        <div class="text-center footer-note pb-2">
-            <i>World E-News by Kelompok Tiny</i>
+        <div class="footer-details text-center footer-note p-2 col-12" style="border:none">
+          &copy; 2021 World E-News
         </div>
     </div>
    

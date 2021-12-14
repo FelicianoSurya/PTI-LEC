@@ -19,7 +19,7 @@
                 </div>
             </div>
             <div class="col-lg-12 pt-2 d-flex justify-content-end">
-                <router-link to=""><button class="btn btn-dark">More Headline</button></router-link>
+                <router-link to=""><button class="btn btn-dark">See More Trending News</button></router-link>
             </div>
         </div>
 

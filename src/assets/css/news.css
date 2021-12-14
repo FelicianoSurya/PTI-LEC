@@ -8,6 +8,13 @@
     width: 25%;
 }
 
+.main-navbar {
+    box-shadow: 2px 4px 5px 0px rgba(0, 0, 0, 0.11);
+    -webkit-box-shadow: 2px 4px 5px 0px rgba(0, 0, 0, 0.233);
+    -moz-box-shadow: 2px 4px 5px 0px rgba(0, 0, 0, 0.164);
+    padding: 20px;
+}
+
 .nav .nav-item{
     list-style: none;
 }

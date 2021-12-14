@@ -1,6 +1,16 @@
+.about-top img{
+    width: 70%;
+}
+
 .ourteam-card img {
     width: 100%;
+    margin-bottom: 10px;
 }
+
+.ourteam-card{
+    line-height: 10px;
+}
+
 .section-6{
     background-color: white;
 }
@@ -19,9 +29,10 @@
     transform: scale(1.1);
     transition: 0.1s;
     background-color: #ffbb55;
+    color:white;
     cursor: grab;
 }
 
-.ourteam-card img {
-    margin-bottom: 10px;
+.about-top1 {
+    background-color: rgba(230, 227, 227, 0.432);
 }
