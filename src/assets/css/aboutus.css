@@ -2,13 +2,22 @@
     width: 70%;
 }
 
-.ourteam-card img {
+.ourteam-card img{
     width: 100%;
-    margin-bottom: 10px;
+    margin-bottom: 12px;
 }
 
 .ourteam-card{
-    line-height: 7px;
+    min-height:150px;
+}
+
+.ourteam-card .img1 {
+    width: 40%;
+    margin-bottom: 12px;
+}
+
+.ourteam-card{
+    line-height: 15px;
 }
 
 .section-6{
@@ -28,11 +37,11 @@
 .section-6 .ourteam-card:hover{
     transform: scale(1.1);
     transition: 0.1s;
-    background-color: #ffbb55;
-    color:white;
+    background-color: #bdbdbd;
+    color:rgb(102, 102, 102);
     cursor: grab;
 }
 
 .about-top1 {
-    background-color: rgba(230, 227, 227, 0.432);
+    background-color: rgba(238, 238, 238, 0.616);
 }

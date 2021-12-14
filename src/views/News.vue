@@ -1,19 +1,19 @@
 <template>
 
 <div>
-      <div class="container mt-2 col-md-11 col-sm-9 col-11 d-flex justify-content-between pt-4">
-            <ul class="d-flex">
-              <li class="sort-news justify-content-start"><SelectLanguage @changeLanguage="changeC($event)" /></li>
-              <li class="sort-news justify-content-start"><SortBy @changeSortBy="changeSortBy($event)" /></li>
-            </ul>
-            <ul>
-              <li class="sort-news justify-content-end d-flex align-items-end">
+      <div class="container mt-2 col-md-11 col-sm-9 col-11 d-flex justify-content-between pt-4 top-news">
+        <h2><b>News</b></h2>
+            <ul class="d-flex sort-news ">
+              <li class="sort-news "><SelectLanguage @changeLanguage="changeC($event)" /></li>
+              <li class="sort-news "><SortBy @changeSortBy="changeSortBy($event)" /></li> 
+              <li class="sort-news d-flex">
                 <Search @changeq="changeq($event)" />
               </li>
             </ul>
       </div>
-
-    <div class="container mt-2 col-md-11 col-sm-9 col-11">
+    
+    <div class="container col-md-11 col-sm-9 col-11">
+      <hr class="w-100 mb-4 mt-0">
         <div v-for="data in news" :key="data.id" class="row mb-3 box-news">
           <div class="col-md-4 p-0 d-flex">
               <img :src="data.urlToImage" alt="image_media">

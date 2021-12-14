@@ -93,3 +93,15 @@
 .newscard-date h6 {
     font-size: 12px;
 }
+
+.top-news h2 {
+    text-align: left;
+}
+
+.top-news li {
+    font-size: 12px;
+}
+
+.middle-home {
+    background-color :rgba(0, 0, 0, 0.116);
+}
