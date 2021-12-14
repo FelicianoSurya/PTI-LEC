@@ -1,5 +1,5 @@
 .background-banner{
-    width: 100%;
+    min-width: 100%;
     min-height: 400px;
     background-size: cover;
     background-repeat:no-repeat ;
@@ -14,4 +14,13 @@
 .headline-date {
     border-top: 1px solid white;
     padding-top:2px;
+}
+
+.headline-desc {
+    text-align: left;
+}
+
+div button:hover {
+    color: white;
+    background-color: grey;
 }
