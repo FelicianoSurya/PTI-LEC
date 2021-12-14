@@ -1,7 +1,10 @@
 <template>
 
-    <div class="col-md-12 col-sm-9 col-11 m-0 d-flex justify-content-start">
-         <h2><b>Today News</b></h2>
+    <div class="col-md-12 col-sm-9 col-11 m-0 d-flex justify-content-between">
+         <h2 class="m-0"><b>Today News</b></h2>
+         <div class="d-flex justify-content-around">
+            <SelectLanguage @changeLanguage="changeC($event)" />
+        </div>
     </div> 
     <div class="container col-md-12 col-sm-11 col-12"> 
         <div v-for="data in news.slice(0, 4)" :key="data.id" class="ms-0 row mt-3 box-news">
@@ -25,16 +28,22 @@
 </template>
 
 <script>
+import SelectLanguage from '../components/LanguageSelect.vue'
+
 export default {
   name: 'NewsCard',
+  components : {
+      SelectLanguage,
+  },
   data(){
     return {
         news : [],
         data : {
-            qlnTitle : '',
-            q : 'all',
+            qInTitle : '',
+            q : 'social',
+            sources : '',
             language : '',
-            sortBy : ''
+            sortBy : 'publishedAt'
         }
     }
   },
@@ -43,9 +52,15 @@ export default {
   },
   methods : {
       getNews(){
-          axios.get('https://newsapi.org/v2/everything?qlnTitle=' + this.data.qlnTitle + '&q='+ this.data.q +'&language=' + this.data.language + '&sortBy=' + this.data.sortBy +'&apiKey=9df00cedc1d04fb99e0e61c94c9f52da').then((res)=>{
+          axios.get('https://newsapi.org/v2/everything?qInTitle=' + this.data.qInTitle + '&sources=' + this.data.sources + '&q='+ this.data.q +'&language=' + this.data.language + '&sortBy=' + this.data.sortBy +'&apiKey=eda27adfc6684982bba599abb733e9d4').then((res)=>{
               this.news = res.data.articles;
-          });
+          }).catch(err=>{
+              console.error(err);
+          })
+      },
+      changeC(country){
+          this.data.language = country;
+          this.getNews();
       }
   }
 }

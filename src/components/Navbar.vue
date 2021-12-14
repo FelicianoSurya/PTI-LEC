@@ -7,10 +7,10 @@
                     <a class="nav-link"><router-link to="/">Home</router-link></a>
                 </li>
                 <li class="nav-item px-3">
-                    <a class="nav-link"><router-link to="/News">News</router-link></a>
+                    <a class="nav-link"><router-link to="/news">News</router-link></a>
                 </li>
                 <li class="nav-item px-3">
-                    <a class="nav-link"><router-link to="/About">About Us</router-link></a>
+                    <a class="nav-link"><router-link to="/about">About Us</router-link></a>
                 </li>
             </ul>
             <div class="col-lg-6 col-xs-10 search d-flex justify-content-end pe-4">
