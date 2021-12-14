@@ -8,7 +8,7 @@
             <h2><b>Top 10 Trending News</b></h2>
             <CountrySelect @changeCountry="changeC($event)" />
           </div>
-          <div class="line"></div>
+          <hr class="w-100 mt-2 mb-3">
         </div>
         
         <div v-for="data in news.slice(0, 10)" :key="data.id" class="row mb-3 box-news">
