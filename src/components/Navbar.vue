@@ -3,16 +3,16 @@
     <div class="container-fluid p-0 main-navbar" style="background-color:black">
         <div class="nav pX-0 d-flex">
             <ul class="col-lg-12 col-11 d-flex m-0 justify-content-center">
-                <li class="nav-item px-3">
+                <li class="nav-item px-lg-5">
                     <a class="nav-link"><router-link to="/">Home</router-link></a>
                 </li>
-                <li class="nav-item px-3">
+                <li class="nav-item px-lg-5">
                     <a class="nav-link"><router-link to="/trending">Trending</router-link></a>
                 </li>
-                <li class="nav-item px-3">
+                <li class="nav-item px-lg-5">
                     <a class="nav-link"><router-link to="/news">News</router-link></a>
                 </li>
-                <li class="nav-item px-3">
+                <li class="nav-item px-lg-5">
                     <a class="nav-link"><router-link to="/about">About Us</router-link></a>
                 </li>
             </ul>

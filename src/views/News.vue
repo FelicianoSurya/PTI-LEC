@@ -1,13 +1,17 @@
 <template>
 
 <div>
-      <div class="container mt-2 col-md-11 col-sm-9 col-11 d-flex pt-4">
-            <li class="sort-news justify-content-start"><SelectLanguage @changeLanguage="changeC($event)" /></li>
-            <li class="sort-news justify-content-start"><SortBy @changeSortBy="changeSortBy($event)" /></li>
-            <li class="sort-news justify-content-end d-flex align-items-end">
-              <Search @changeq="changeq($event)" />
-              <img class="px-1 col-lg-2" alt=" " src="../assets/images/search.png">
-            </li>
+      <div class="container mt-2 d-flex pt-4">
+        <div class="col-lg-6 col-md-10 d-flex">
+          <li class="sort-news justify-content-start"><SelectLanguage @changeLanguage="changeC($event)" /></li>
+          <li class="sort-news justify-content-start"><SortBy @changeSortBy="changeSortBy($event)" /></li>
+        </div>
+        <div class="col-lg-6 col-md-10 d-flex justify-content-end">
+          <li class="sort-news justify-content-end d-flex align-items-end">
+            <img class="px-1 col-lg-2" alt=" " src="../assets/images/search.png">
+            <Search @changeq="changeq($event)" />
+          </li>
+        </div>
       </div>
 
     <div class="container mt-2 col-md-11 col-sm-9 col-11">
