@@ -18,35 +18,35 @@
       <div class="container pt-3 pb-5">
           <div class="row justify-content-center">
               <h2 class="pb-3"><b>Available Features</b></h2>
-              <div class="col-lg-2 col-sm-6 col-9 p-lg-0 mx-2 feature">
+              <div class="col-lg-2 col-sm-6 col-9 p-lg-0 mx-2 mt-3">
                   <div class="ourteam-card text-center">
                       <img src="../assets/images/Ano.png" alt="">
                       <h6><b>Headline</b></h6>
                       <p style="font-size:12px">feliciano</p> 
                   </div>
               </div>
-                 <div class="col-lg-2 col-sm-6 col-9 p-lg-0 mx-2">
+                 <div class="col-lg-2 col-sm-6 col-9 p-lg-0 mx-2 mt-3">
                   <div class="ourteam-card text-center">
                       <img src="../assets/images/Ano.png" alt="">
                       <h6><b>Trending News</b></h6>
                       <p style="font-size:12px">feliciano</p>                   
                   </div>
               </div>
-               <div class="col-lg-2 col-sm-6 col-9 p-lg-0 mx-2">
+               <div class="col-lg-2 col-sm-6 col-9 p-lg-0 mx-2 mt-3">
                   <div class="ourteam-card text-center">
                       <img src="../assets/images/Ano.png" alt="">
                       <h6><b>Filter</b></h6>
                       <p style="font-size:12px">feliciano</p>                      
                   </div>
               </div>
-               <div class="col-lg-2 col-sm-6 col-9 p-lg-0 mx-2">
+               <div class="col-lg-2 col-sm-6 col-9 p-lg-0 mx-2 mt-3">
                   <div class="ourteam-card text-center">
                       <img src="../assets/images/Ano.png" alt="">
                       <h6><b>Today News</b></h6>
                       <p style="font-size:12px">feliciano</p> 
                   </div>
               </div>
-               <div class="col-lg-2 col-sm-6 col-9 p-lg-0 mx-2">
+               <div class="col-lg-2 col-sm-6 col-9 p-lg-0 mx-2 mt-3">
                   <div class="ourteam-card text-center">
                       <img src="../assets/images/Ano.png" alt="">
                       <h6><b>Search</b></h6>
@@ -62,7 +62,14 @@
     <div class="section-6 py-5" id="team">
       <div class="container">
           <div class="row justify-content-center">
-              <h2><b>Meet The Team</b></h2>
+              <div class="px-5 mb-2">
+                <h2><b>Meet The Tiny Team</b></h2>
+                    <p> Hello there! introduce us as The Tiny Team that consist of 3 people who are currently studying 
+                        at Multimedia Nusantara University, Informatics Major, Class of 2020. We created this website 
+                        as a fulfillment of the 3rd semester final exam in the Introduction to Internet Technology course.
+                    </p>
+                <div class="line"></div>
+                </div>
               <div class="col-lg-3 col-sm-6 col-8 p-3">
                   <div class="ourteam-card text-center">
                       <img src="../assets/images/Ano.png" alt="">

@@ -9,7 +9,6 @@
             <ul>
               <li class="sort-news justify-content-end d-flex align-items-end">
                 <Search @changeq="changeq($event)" />
-                <img class="px-1 col-lg-2" alt=" " src="../assets/images/search.png">
               </li>
             </ul>
       </div>
