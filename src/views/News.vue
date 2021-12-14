@@ -59,7 +59,7 @@ export default {
   },
   methods : {
     getNews(){
-      axios.get('https://newsapi.org/v2/everything?q=' + this.data.q + '&language=' + this.data.language + '&from=' + this.data.from + '&to=' + this.data.to + '&sortBy='+ this.data.sortBy + '&apiKey=eda27adfc6684982bba599abb733e9d4').then((res)=>{
+      axios.get('https://newsapi.org/v2/everything?q=' + this.data.q + '&language=' + this.data.language + '&from=' + this.data.from + '&to=' + this.data.to + '&sortBy='+ this.data.sortBy + '&apiKey=c43b4de0624d496890c10dec833b7275').then((res)=>{
         this.news = res.data.articles;
       });
     },
