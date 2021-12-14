@@ -24,3 +24,7 @@ div button:hover {
     color: white;
     background-color: grey;
 }
+
+.newscard-date {
+    font-size: 12px;
+}

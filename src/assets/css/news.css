@@ -89,3 +89,7 @@
     width:45px;
     height:35px;
 }
+
+.newscard-date h6 {
+    font-size: 12px;
+}

@@ -15,31 +15,42 @@
 
   <div class="container-fluid p-0">
     <div class="section-6 py-5 about-top1" id="team">
-      <div class="container">
+      <div class="container pt-3 pb-5">
           <div class="row justify-content-center">
-              <h2><b>Meet The Team</b></h2>
-              <div class="col-lg-3 col-sm-6 col-8 p-3">
+              <h2 class="pb-3"><b>Available Features</b></h2>
+              <div class="col-lg-2 col-sm-6 col-9 p-lg-0 mx-2 feature">
                   <div class="ourteam-card text-center">
                       <img src="../assets/images/Ano.png" alt="">
-                      <h4><b>Feliciano Surya M</b></h4>
-                      <p style="font-size:12px">feliciano.marcello@student.umn.ac.id</p> 
-                      <p class="m-0">( 000 000 43255 )</p>
+                      <h6><b>Headline</b></h6>
+                      <p style="font-size:12px">feliciano</p> 
                   </div>
               </div>
-              <div class="col-lg-3 col-sm-6 col-8 p-3">
+                 <div class="col-lg-2 col-sm-6 col-9 p-lg-0 mx-2">
                   <div class="ourteam-card text-center">
-                      <img src="../assets/images/Dea.png" alt="">
-                      <h4><b>Dea Noveriyanti</b></h4>
-                      <p style="font-size:12px">dea.noveriyanti@student.umn.ac.id</p> 
-                      <p class="m-0">( 000 000 42550 )</p>
+                      <img src="../assets/images/Ano.png" alt="">
+                      <h6><b>Trending News</b></h6>
+                      <p style="font-size:12px">feliciano</p>                   
                   </div>
               </div>
-              <div class="col-lg-3 col-sm-6 col-8 p-3">
+               <div class="col-lg-2 col-sm-6 col-9 p-lg-0 mx-2">
                   <div class="ourteam-card text-center">
-                      <img src="../assets/images/Charisma.png" alt="">
-                      <h4><b>Charisma Christ A</b></h4>
-                      <p style="font-size:12px">feliciano.marcello@student.umn.ac.id</p> 
-                      <p class="m-0">( 000 000 43903 )</p>
+                      <img src="../assets/images/Ano.png" alt="">
+                      <h6><b>Filter</b></h6>
+                      <p style="font-size:12px">feliciano</p>                      
+                  </div>
+              </div>
+               <div class="col-lg-2 col-sm-6 col-9 p-lg-0 mx-2">
+                  <div class="ourteam-card text-center">
+                      <img src="../assets/images/Ano.png" alt="">
+                      <h6><b>Today News</b></h6>
+                      <p style="font-size:12px">feliciano</p> 
+                  </div>
+              </div>
+               <div class="col-lg-2 col-sm-6 col-9 p-lg-0 mx-2">
+                  <div class="ourteam-card text-center">
+                      <img src="../assets/images/Ano.png" alt="">
+                      <h6><b>Search</b></h6>
+                      <p style="font-size:12px">feliciano</p> 
                   </div>
               </div>
             </div>

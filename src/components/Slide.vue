@@ -10,7 +10,7 @@
                 <div class="h-100 px-4 py-2 headline-desc flex-column justify-content-start text-left background-title">
                     <h4><b>{{ data.title }}</b></h4>
                     <p>{{ data.description }}</p>
-                    <div class="headline-date d-flex justify-content-start">
+                    <div class="headline-date d-flex justify-content-start newscard-date">
                         <p>{{ data.publishedAt }}</p>
                     </div>
                     <div class="d-flex justify-content-start col-lg-12 col-xs-11 mb-1">

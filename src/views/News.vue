@@ -11,7 +11,6 @@
       </div>
 
     <div class="container mt-2 col-md-11 col-sm-9 col-11">
-
         <div v-for="data in news" :key="data.id" class="row mb-3 box-news">
           <div class="col-md-4 p-0 d-flex">
               <img :src="data.urlToImage" alt="image_media">
@@ -24,7 +23,7 @@
                   <a :href="data.url" target="_blank"><button class="btn btn-secondary btn-sm mb-1">Go To Article</button></a>
                 </div>
             </div>
-            <div class="card-footer col-12 d-flex justify-content-end text-muted">
+            <div class="card-footer col-12 d-flex justify-content-end text-muted newscard-date">
                 <h6>{{ data.publishedAt }}</h6>
             </div> 
           </div>
