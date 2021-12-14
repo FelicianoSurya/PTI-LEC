@@ -1,16 +1,18 @@
 <template>
 
 <div>
+      <div class="container mt-2 col-md-11 col-sm-9 col-11 d-flex pt-4">
+            <li class="sort-news justify-content-start"><SelectLanguage @changeLanguage="changeC($event)" /></li>
+            <li class="sort-news justify-content-start"><SortBy @changeSortBy="changeSortBy($event)" /></li>
+            <li class="sort-news justify-content-end d-flex align-items-end">
+              <Search @changeq="changeq($event)" />
+              <img class="px-1 col-lg-2" alt=" " src="../assets/images/search.png">
+            </li>
+      </div>
 
     <div class="container mt-2 col-md-11 col-sm-9 col-11">
-        <div class="d-flex justify-content-end">
-          <div class="d-flex justify-content-around p-3">
-            <SelectLanguage @changeLanguage="changeC($event)" />
-            <SortBy @changeSortBy="changeSortBy($event)" />
-            <Search @changeq="changeq($event)" />
-          </div>
-        </div>
-        <div v-for="data in news" :key="data.id" class="row mt-5 box-news">
+
+        <div v-for="data in news" :key="data.id" class="row mb-3 box-news">
           <div class="col-md-4 p-0 d-flex">
               <img :src="data.urlToImage" alt="image_media">
           </div>  
@@ -18,6 +20,9 @@
             <div>
               <h3><b>{{ data.title }}</b></h3>
               <p class="desc">{{ data.description }}</p>
+                <div class="d-flex justify-content-end">
+                  <a :href="data.url" target="_blank"><button class="btn btn-secondary btn-sm mb-1">Go To Article</button></a>
+                </div>
             </div>
             <div class="card-footer col-12 d-flex justify-content-end text-muted">
                 <h6>{{ data.publishedAt }}</h6>

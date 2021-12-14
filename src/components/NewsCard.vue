@@ -1,10 +1,7 @@
 <template>
 
-    <div class="col-md-12 col-sm-9 col-11 m-0 d-flex justify-content-between">
-         <h2 class="m-0"><b>Today News</b></h2>
-         <div class="d-flex justify-content-around">
-            <SelectLanguage @changeLanguage="changeC($event)" />
-        </div>
+    <div class="col-md-12 col-sm-9 col-11 m-0 d-flex justify-content-start">
+         <h2><b>Today News</b></h2>
     </div> 
     <div class="container col-md-12 col-sm-11 col-12"> 
         <div v-for="data in news.slice(0, 4)" :key="data.id" class="ms-0 row mt-3 box-news">
@@ -14,7 +11,7 @@
                 <div class="col-md-8 p-3 d-flex flex-column align-items-start justify-content-between information">
                     <h3><b>{{ data.title }}</b></h3>
                     <p class="desc">{{ data.description }}</p>
-                    <div class="d-flex justify-content-end">
+                    <div class="d-flex justify-content-end mt-0">
                         <a :href="data.url" target="_blank"><button class="btn btn-secondary btn-sm mb-1">Go To Article</button></a>
                     </div>
                    
@@ -28,22 +25,16 @@
 </template>
 
 <script>
-import SelectLanguage from '../components/LanguageSelect.vue'
-
 export default {
   name: 'NewsCard',
-  components : {
-      SelectLanguage,
-  },
   data(){
     return {
         news : [],
         data : {
-            qInTitle : '',
-            q : 'social',
-            sources : '',
+            qlnTitle : '',
+            q : 'all',
             language : '',
-            sortBy : 'publishedAt'
+            sortBy : ''
         }
     }
   },
@@ -52,15 +43,9 @@ export default {
   },
   methods : {
       getNews(){
-          axios.get('https://newsapi.org/v2/everything?qInTitle=' + this.data.qInTitle + '&sources=' + this.data.sources + '&q='+ this.data.q +'&language=' + this.data.language + '&sortBy=' + this.data.sortBy +'&apiKey=c43b4de0624d496890c10dec833b7275').then((res)=>{
+          axios.get('https://newsapi.org/v2/everything?qlnTitle=' + this.data.qlnTitle + '&q='+ this.data.q +'&language=' + this.data.language + '&sortBy=' + this.data.sortBy +'&apiKey=9df00cedc1d04fb99e0e61c94c9f52da').then((res)=>{
               this.news = res.data.articles;
-          }).catch(err=>{
-              console.error(err);
-          })
-      },
-      changeC(country){
-          this.data.language = country;
-          this.getNews();
+          });
       }
   }
 }
